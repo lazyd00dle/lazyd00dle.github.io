@@ -132,15 +132,15 @@ function saveImage() {
 
   // Add the challenge text with a little white space above
   const challengeText = challengeWordElem.textContent;
-  mergedCtx.fillStyle = 'rgba(255, 255, 255, 0.8)'; // Set white color with transparency
+  mergedCtx.fillStyle = 'rgba(255, 255, 255, 0.5)'; // Set white color with transparency
   mergedCtx.fillRect(0, 0, mergedCanvas.width, 50); // Add white space for challenge text
   mergedCtx.fillStyle = '#000'; // Set text color
-  mergedCtx.font = 'bold 18px Arial'; // Set font style and size
+  mergedCtx.font = 'bold 15px Arial'; // Set font style and size
   mergedCtx.textAlign = 'left'; // Align text to the left
   mergedCtx.fillText(challengeText, 10, 30); // Render challenge text
 
   // Add the username as a watermark
-  mergedCtx.fillStyle = 'rgba(0, 0, 0, 0.2)'; // Set text color with transparency
+  mergedCtx.fillStyle = 'rgba(0, 0, 0, 0.5)'; // Set text color with transparency
   mergedCtx.font = 'italic 20px Arial'; // Set font style and size
   mergedCtx.textAlign = 'right'; // Align text to the right
   mergedCtx.fillText(username, mergedCanvas.width - 10, mergedCanvas.height - 10); // Render username
