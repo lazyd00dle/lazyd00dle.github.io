@@ -1,0 +1,150 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+}
+
+#challengeWord {
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+}
+
+/* Main container styles */
+.container {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Username input and button styles */
+#usernameInput {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#submitUsernameButton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff00d9;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#submitUsernameButton:hover {
+  background-color: #0056b3;
+}
+
+/* Canvas styles */
+canvas {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Controls container styles */
+.controls {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Color picker styles */
+.controls input[type="color"] {
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+/* Control button styles */
+.controls button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff00d9;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: auto;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .controls button {
+    width: calc(50% - 10px);
+    margin: 5px 0;
+  }
+}

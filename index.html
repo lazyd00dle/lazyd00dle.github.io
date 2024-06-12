@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Doodle Wall</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome To ThreadSketch</h1>
+      <p>Its Build For Lazy People</p>
+      </br>
+      <p>Dont Forget To Submit Your Username!!!</p>
+    </header>
+
+    
+
+    <div class="container">
+        <input type="text" id="usernameInput" placeholder="Enter your username" />
+    <button id="submitUsernameButton">Submit</button>
+
+    <div id="challengeWord"></div>
+
+      <canvas id="canvas" width="800" height="600"></canvas>
+      <div class="controls">
+        <input type="color" id="colorPicker" />
+        <input type="color" id="backgroundColorPicker" value="#ffffff">
+
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+        <button onclick="challenge()">Challenge</button>
+        <button onclick="saveImage()">SaveImage</button>
+      </div>
+    </div>
+
+
+    <footer>
+        <footer>
+            <p>Designed with ❤️ by <a href="https://www.threads.net/@toxicf1sh" target="_blank" id="footer-link">ToxicF1sh</a></p>
+          </footer>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
